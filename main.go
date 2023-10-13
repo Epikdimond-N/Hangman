@@ -5,5 +5,5 @@ import (
 )
 
 func main() {
-	h.Recup()
+	h.Jeu("dindon")
 }
