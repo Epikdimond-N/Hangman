@@ -2,6 +2,7 @@ package hangman
 
 import (
 	"fmt"
+	"math/rand"
 	"os"
 )
 
@@ -18,12 +19,53 @@ func Jeu(mot string) {
 	}
 }
 
+var Data []byte
+var err error
+
 func Recup() {
-	data, err := os.ReadFile("dico_test.txt")
+	Data, err = os.ReadFile("dico_test.txt")
 	if err != nil {
 		fmt.Println("Fichier vide !")
 	}
-	os.Stdout.Write(data)
+	os.Stdout.Write(Data)
+}
+
+var Sdata string
+
+func Convert() {
+	Sdata = (string(Data))
+	/* 	for _, b := range Data {
+	   		Sdata = append(Sdata, string(b))
+	   	}
+	   	return Sdata */
+}
+
+var TabData []string
+
+func Convertstr() []string {
+	fmt.Println(Sdata)
+	var Tampon string = ""
+	for _, b := range Sdata {
+		i := 0
+		Tampon += string(b)
+		// fmt.Print("Tampon : " + Tampon)
+		if b == '\n' {
+			i += 1
+			TabData = append(TabData, Tampon)
+			Tampon = ""
+		}
+	}
+	//fmt.Println(TabData)
+	return TabData
+}
+
+var MotR string
+
+func Motrandom() {
+	d := len(TabData)
+	fmt.Println(d)
+	m := rand.Intn(d)
+	MotR = TabData[m]
 }
 
 func Displaystock(mot string, stock []string) int {
