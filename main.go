@@ -12,5 +12,4 @@ func main() {
 	h.Motrandom()
 	fmt.Println(h.MotR)
 	h.Jeu(h.MotR)
-
 }
