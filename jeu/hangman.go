@@ -23,7 +23,7 @@ var Data []byte
 var err error
 
 func Recup() {
-	Data, err = os.ReadFile("dico_test.txt")
+	Data, err = os.ReadFile("dico_alex.txt")
 	if err != nil {
 		fmt.Println("Fichier vide !")
 	}
