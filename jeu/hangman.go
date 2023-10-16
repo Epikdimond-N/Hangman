@@ -8,7 +8,7 @@ import (
 
 func Jeu(mot string) {
 	var c int
-	stock := make([]string, len(mot))
+	stock := make([]string, len(mot)-2)
 	Displaystock(mot, stock)
 	for i := 1; c <= 10; i++ {
 		Choose(mot, stock, c)
@@ -86,6 +86,7 @@ func Inputletter(mot string, stock []string, c int) {
 	var letter string
 	var estpresent bool
 	fmt.Scan(&letter)
+	fmt.Scan()
 	for i := 0; i <= len(mot)-1; i++ {
 		if letter == string(mot[i]) {
 			stock[i] = letter
@@ -115,17 +116,17 @@ func Choose(mot string, stock []string, c int) {
 	var choix int
 	var a int
 	fmt.Println("\nChoisissez une option : \n1. Emettre une hypothèse sur une lettre présente dans le mot\n2. Entrer directement le mot")
-	fmt.Scanln(&choix)
+	fmt.Scan(&choix)
+	fmt.Scan()
+	fmt.Println(choix)
 	switch choix {
 	case 1:
 		Inputletter(mot, stock, c)
 		a = Displaystock(mot, stock)
-		if a == len(mot) {
+		if a == len(mot)-2 {
 			fmt.Println("\nBien joué ! Vous avez trouvé le mot !")
 			fmt.Println(a)
 			return
-		} else {
-			Choose(mot, stock, c)
 		}
 	case 2:
 		Inputword(mot, c)
