@@ -128,11 +128,19 @@ func Choose(mot string, stock []string, c int) {
 			fmt.Println(a)
 			return
 		}
+		fmt.Println("\033[H\033[2J")
+		Displaystock(mot, stock)
 	case 2:
 		Inputword(mot, c)
 		Choose(mot, stock, c)
+		fmt.Println("\033[H\033[2J")
+		Displaystock(mot, stock)
 	default:
 		fmt.Println("Choix invalide, Veuillez choisir une option valide")
 		Choose(mot, stock, c)
+		fmt.Println("\033[H\033[2J")
+		Displaystock(mot, stock)
 	}
 }
+
+//fmt.Println("\033[H\033[2J")
