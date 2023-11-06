@@ -2,23 +2,22 @@
 new york city
 los angeles
 londres
-paris
 tokyo
 sydney
-pékin
-mumbai (bombay)
+pekin
+mumbai
 rio de janeiro
 le caire
 mexico
 istanbul
 moscou
-dubaï
+dubai
 toronto
 buenos aires
 rome
 madrid
 bangkok
-séoul
+seoul
 berlin
 johannesbourg
 le cap
@@ -26,14 +25,14 @@ vancouver
 sydney
 melbourne
 shanghai
-pékin
+pekin
 singapour
 hong kong
 kuala lumpur
 jakarta
 dhaka
 karachi
-téhéran
+teheran
 le caire
 casablanca
 istanbul
@@ -48,7 +47,7 @@ prague
 budapest
 vienne
 zurich
-genève
+geneve
 bruxelles
 lisbonne
 madrid
@@ -83,7 +82,7 @@ prague
 budapest
 vienne
 zurich
-genève
+geneve
 berne
 lausanne
 luxembourg

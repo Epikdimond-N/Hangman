@@ -5,6 +5,5 @@ import (
 )
 
 func main() {
-	var mot = h.WriteWord("dico_test.txt")
-	h.Jeu(mot)
+	h.ChooseDico()
 }

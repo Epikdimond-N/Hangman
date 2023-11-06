@@ -3,7 +3,7 @@ maximus decimus meridius
 vito corleone
 luke skywalker
 forrest gump
-leon s. kennedy
+leon s kennedy
 mario
 harry potter
 indiana jones
@@ -76,14 +76,14 @@ harrison ford
 keanu reeves
 orlando bloom
 elijah wood
-samuel l. jackson
+samuel l jackson
 sigourney weaver
 andy serkis
 rutger hauer
 kevin spacey
 liam neeson
 denzel washington
-robert downey jr.
+robert downey jr
 jack nicholson
 heath ledger
 marlon brando

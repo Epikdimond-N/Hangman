@@ -1,17 +1,17 @@
 lion
 tigre
-éléphant
+elephant
 girafe
 ours
 loup
-panthère
-rhinocéros
+panthere
+rhinoceros
 hippopotame
 gorille
-chimpanzé
-zèbre
-guépard
-hyène
+chimpanze
+zebre
+guepard
+hyene
 kangourou
 koala
 orque
@@ -22,7 +22,7 @@ tortue
 crocodile
 alligator
 serpent
-écureuil
+ecureuil
 raton laveur
 castor
 chauve-souris
@@ -45,19 +45,19 @@ flamant rose
 pigeon
 mouette
 pingouin
-émeu
+emeu
 autruche
 grenouille
 crapaud
 salamandre
-lézard
-caméléon
+lezard
+cameleon
 gecko
 tortue de mer
 iguane
 escargot
 méduse
-étoile de mer
+etoile de mer
 pieuvre
 calmar
 crevette
@@ -73,22 +73,22 @@ thon
 baleine à bosse
 narval
 morse
-élan
+elan
 cerf
 renne
-chèvre
+chevre
 mouton
 cochon
 vache
 cheval
-âne
+ane
 chameau
 lama
 girafe
 okapi
 gazelle
 antilope
-élan
+elan
 kangourou
 wallaby
 koala
