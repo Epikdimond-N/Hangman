@@ -1,7 +1,9 @@
 package hangman
 
 import (
+	"bufio"
 	"fmt"
+	"log"
 	"math/rand"
 	"os"
 )
@@ -19,53 +21,29 @@ func Jeu(mot string) {
 	}
 }
 
-var Data []byte
-var err error
-
-func Recup() {
-	Data, err = os.ReadFile("dico_alex.txt")
+func ReadLines(path string) ([]string, error) {
+	file, err := os.Open(path)
 	if err != nil {
-		fmt.Println("Fichier vide !")
+		return nil, err
 	}
-	os.Stdout.Write(Data)
-}
+	defer file.Close()
 
-var Sdata string
-
-func Convert() {
-	Sdata = (string(Data))
-	/* 	for _, b := range Data {
-	   		Sdata = append(Sdata, string(b))
-	   	}
-	   	return Sdata */
-}
-
-var TabData []string
-
-func Convertstr() []string {
-	fmt.Println(Sdata)
-	var Tampon string = ""
-	for _, b := range Sdata {
-		i := 0
-		Tampon += string(b)
-		// fmt.Print("Tampon : " + Tampon)
-		if b == '\n' {
-			i += 1
-			TabData = append(TabData, Tampon)
-			Tampon = ""
-		}
+	var lines []string
+	scanner := bufio.NewScanner(file)
+	for scanner.Scan() {
+		lines = append(lines, scanner.Text())
 	}
-	//fmt.Println(TabData)
-	return TabData
+	return lines, scanner.Err()
 }
 
-var MotR string
-
-func Motrandom() {
-	d := len(TabData)
-	fmt.Println(d)
-	m := rand.Intn(d)
-	MotR = TabData[m]
+func WriteWord(path string) string {
+	f, err := ReadLines(path)
+	if err != nil {
+		log.Fatalf("readLines: %s", err)
+	}
+	ale := rand.Intn(len(f))
+	fmt.Println(f[ale])
+	return f[ale]
 }
 
 func Displaystock(mot string, stock []string) int {
@@ -85,6 +63,7 @@ func Inputletter(mot string, stock []string, c int) {
 	fmt.Println("\n\nEntrez une lettre : ")
 	var letter string
 	var estpresent bool
+	estpresent = false
 	fmt.Scan(&letter)
 	fmt.Scan()
 	for i := 0; i <= len(mot)-1; i++ {
@@ -101,8 +80,11 @@ func Inputletter(mot string, stock []string, c int) {
 
 func Inputword(mot string, c int) {
 	fmt.Println("Entrez le mot que vous pensez bon")
+	fmt.Println("Le mot c'est :", mot)
 	var guess string
 	fmt.Scan(&guess)
+	fmt.Println(len(guess))
+	fmt.Println(len(mot))
 	if guess == mot {
 		fmt.Println("C'est le bon mot !")
 	} else {
@@ -123,16 +105,24 @@ func Choose(mot string, stock []string, c int) {
 	case 1:
 		Inputletter(mot, stock, c)
 		a = Displaystock(mot, stock)
-		if a == len(mot)-2 {
+		if a == len(mot) {
 			fmt.Println("\nBien joué ! Vous avez trouvé le mot !")
 			fmt.Println(a)
 			return
 		}
+		fmt.Println("\033[H\033[2J")
+		Displaystock(mot, stock)
+		fmt.Println(c)
 	case 2:
 		Inputword(mot, c)
 		Choose(mot, stock, c)
+		fmt.Println("\033[H\033[2J")
+		Displaystock(mot, stock)
+		fmt.Println(c)
 	default:
 		fmt.Println("Choix invalide, Veuillez choisir une option valide")
 		Choose(mot, stock, c)
+		fmt.Println("\033[H\033[2J")
+		Displaystock(mot, stock)
 	}
 }
