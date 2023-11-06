@@ -1,100 +1,100 @@
-Titanic
-Avatar
-Star Wars
-Jurassic Park
-Inception
-Gladiator
-Matrix
-Forrest Gump
-Le Parrain
-The Dark Knight
-Fight Club
-Pulp Fiction
-Les Évadés
-Le Seigneur des Anneaux
-Le Silence des Agneaux
-La Ligne Verte
-American Beauty
-Il faut sauver le soldat Ryan
-Braveheart
-Le Roi Lion
-Terminator
-Le Prestige
-Les Affranchis
-Les Infiltrés
-The Revenant
-Le Sixième Sens
-Shining
-E.T. l'extra-terrestre
-L'Exorciste
-Orange mécanique
-Apocalypse Now
-12 Hommes en colère
-La Liste de Schindler
-Le Pianiste
-Gatsby le Magnifique
-Breakfast Club
-Le Lauréat
-Taxi Driver
-Minuit à Paris
-2001 l'Odyssée de l'espace
-Blade Runner
-Le Bon la Brute et le Truand
-Reservoir Dogs
-Fargo
-No Country for Old Men
-Voyage au bout de l'enfer
-Platoon
-Démineurs
-Le Pont de la Rivière Kwaï
-Autant en emporte le vent
-Casablanca
-Psychose
-Sueurs froides
-Fenêtre sur cour
-Coup de foudre à Notting Hill
-Maman j'ai raté l'avion
-Piège de cristal
-Rebelle
-La Reine des Neiges
-Le Monde de Nemo
-Toy Story
-Shrek
-La Petite Sirène
-Aladdin
-Mulan
-Raiponce
-Les Indestructibles
-Monstres et Cie
-Zootopie
-Vice-Versa
-Black Swan
-The Social Network
-La La Land
-Le Lauréat
-Taxi Driver
-2001 l'Odyssée de l'Espace
-Blade Runner
-Le Bon la Brute et le Truand
-Reservoir Dogs
-Fargo
-No Country for Old Men
-Voyage au bout de l'enfer
-Platoon
-Démineurs
-Le Pont de la Rivière Kwaï
-Autant en emporte le vent
-Casablanca
-Psychose
-Sueurs froides
-Fenêtre sur cour
-Coup de foudre à Notting Hill
-Maman j'ai raté l'avion
-Piège de cristal
-Rebelle
-La Reine des Neiges
-Le Monde de Nemo
-Toy Story
-Shrek
-La Petite Sirène
-Aladdin
+titanic
+avatar
+star wars
+jurassic park
+inception
+gladiator
+matrix
+forrest gump
+le parrain
+the dark knight
+fight club
+pulp fiction
+les evades
+le seigneur des anneaux
+le silence des agneaux
+la ligne verte
+american beauty
+il faut sauver le soldat ryan
+braveheart
+le roi lion
+terminator
+le prestige
+les affranchis
+les infiltrés
+the revenant
+le sixième sens
+shining
+e.t. l'extra-terrestre
+l'exorciste
+orange mécanique
+apocalypse now
+12 hommes en colère
+la liste de schindler
+le pianiste
+gatsby le magnifique
+breakfast club
+le laureat
+taxi driver
+minuit à paris
+2001, l'odyssée de l'espace
+blade runner
+le bon, la brute et le truand
+reservoir dogs
+fargo
+no country for old men
+voyage au bout de l'enfer
+platoon
+démineurs
+le pont de la riviere kwai
+autant en emporte le vent
+casablanca
+psychose
+sueurs froides
+fenêtre sur cour
+coup de foudre à notting hill
+maman, j'ai raté l'avion
+piège de cristal
+rebelle
+la reine des neiges
+le monde de nemo
+toy story
+shrek
+la petite sirène
+aladdin
+mulan
+raiponce
+les indestructibles
+monstres et cie
+zootopie
+vice-versa
+black swan
+the social network
+la la land
+le laureat
+taxi driver
+2001, l'odyssée de l'espace
+blade runner
+le bon, la brute et le truand
+reservoir dogs
+fargo
+no country for old men
+voyage au bout de l'enfer
+platoon
+démineurs
+le pont de la riviere kwai
+autant en emporte le vent
+casablanca
+psychose
+sueurs froides
+fenêtre sur cour
+coup de foudre à notting hill
+maman, j'ai raté l'avion
+piège de cristal
+rebelle
+la reine des neiges
+le monde de nemo
+toy story
+shrek
+la petite sirène
+aladdin
